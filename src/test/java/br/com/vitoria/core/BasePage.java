@@ -8,10 +8,24 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import br.com.vitoria.pages.LoginPage;
+
 public class BasePage {
 	
 
-	
+	  /******************Login********************/
+	  /* esse bloco de login visa a dependencia entre os testes e 
+	   * reutilização de código
+	   */
+	    LoginPage login;
+	    
+	    public void login(String user,String senha) {
+	    	login=new LoginPage();
+	    	login.setEmail(user);
+			login.setSenha(senha);
+			login.entrar();
+	    }
+	 
 	 /**********Text field e text area***************/
 		
 		//permite escrever em campo acessado por tag

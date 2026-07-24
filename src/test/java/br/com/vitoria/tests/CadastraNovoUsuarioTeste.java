@@ -7,7 +7,7 @@ import br.com.vitoria.core.DriverFactory;
 import br.com.vitoria.pages.LoginPage;
 import br.com.vitoria.pages.NovoUsuario;
 
-public class LoginTeste {
+public class CadastraNovoUsuarioTeste {
 	
 	  LoginPage pageLogin;
 	  NovoUsuario pageCadastro;
@@ -19,17 +19,9 @@ public class LoginTeste {
 		pageCadastro=new NovoUsuario();
 	}
 	 
-	/*@Test
-	public void Login() {
-		pageLogin.setEmail("teste@teste.com");
-		pageLogin.setSenha("123");
-		pageLogin.entrar();
-	}*/
 	
 	@Test
-	
 	public void novoCadastro() {
 		pageCadastro.cadastraNovoUser();
 	}
-
 }
