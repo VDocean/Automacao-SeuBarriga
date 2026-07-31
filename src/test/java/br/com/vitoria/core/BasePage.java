@@ -25,6 +25,11 @@ public class BasePage {
 			login.setSenha(senha);
 			login.entrar();
 	    }
+	    
+	  /*****************Botão de Sair********************/
+	    public void clicaBTSair() {
+	    	clicarBotaoXpath("//a[text()='Sair']");
+	    }
 	 
 	 /**********Text field e text area***************/
 		
